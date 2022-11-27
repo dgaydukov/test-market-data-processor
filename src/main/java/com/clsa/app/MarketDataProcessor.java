@@ -40,7 +40,6 @@ public class MarketDataProcessor {
                 final String symbol = queue.take();
                 final PublishedMarketData data = map.get(symbol);
 
-
                 // we already published latest update for this symbol
                 if (data.isPublished()) {
                     continue;

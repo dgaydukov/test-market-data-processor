@@ -6,3 +6,9 @@
 * Both classes are lock-free & multi-threaded. So you can call `onMessage` from one thread, and populate the queue & map, and
 start publisher in another thread. Since we are using lock-free constructs, we don't waste precious time for locks, and since 
 both classes do support multi-threading, we don't lose any data & always get latest updates from one thread in another.
+
+### Testing
+
+There are 2 sets of test:
+* MarketDataProcessorTest - my tests to ensure end-to-end system works
+* TechRequirementTest - 3 tests from pdf file, to ensure requested requirements applied
